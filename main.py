@@ -1,4 +1,5 @@
 # blackjack
+import os
 import random
 
 cards=[11,1,2,3,4,5,6,7,8,9,10,10,10,10]
@@ -46,6 +47,7 @@ def blackjack():
 
     repeat =input("do you want to repeat y/n?").lower()
     if repeat == 'y':
+        os.system('cls')
         blackjack()
     if repeat == 'n':
         exit()
